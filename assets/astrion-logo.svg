@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 292 102" role="img" aria-label="Astrion Assessoria">
+ <title>Astrion Assessoria</title><defs><linearGradient id="a" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#eef7ff"/><stop offset=".5" stop-color="#dbeaf7"/><stop offset="1" stop-color="#209cdf"/></linearGradient></defs>
+ <path d="M39 5 3 83 H30 L50 40 Z" fill="url(#a)"/><path d="M45 47 67 83 H39 L32 70 Z" fill="#00a5ed"/>
+ <text x="80" y="65" fill="#f5f9ff" font-family="Arial,Helvetica,sans-serif" font-size="45" font-weight="700" letter-spacing="-1.6">Astrion</text>
+ <text x="86" y="88" fill="#deeaf5" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="800" letter-spacing="6">ASSESSORIA</text>
+</svg>
