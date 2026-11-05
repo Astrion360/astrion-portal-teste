@@ -656,7 +656,12 @@ html,body{width:100%;height:100%;overscroll-behavior:none}button,a,input,select{
 .slide.chapter .chapter-art.chapter-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(145deg,rgba(3,17,38,.08),rgba(4,23,43,.18));z-index:2;pointer-events:none}
 @media(max-width:970px){.brand-button{min-height:53px!important;padding:3px 7px!important}.header-logo-astrion{width:155px!important;height:45px!important}}
 @media(max-width:640px){.brand-button{min-height:45px!important;padding:2px 5px!important}.header-logo-astrion{width:115px!important;height:39px!important}}
-</style></head><body>
+</style><style id="astrion-typography-refinement-v2">
+    .quote-two-lines{font-size:clamp(15px,3.05vw,46px)!important;line-height:1.22!important;letter-spacing:-.045em!important;max-width:100%!important}
+    .quote-two-lines span{display:block;white-space:nowrap}
+    .quote-two-lines span+span{margin-top:.25em}
+    @media(max-width:640px){.quote-two-lines{font-size:clamp(14px,3.7vw,23px)!important;letter-spacing:-.04em!important}}
+    </style></head><body>
 <a class="skip-link" href="#stage">Ir para o conteúdo</a>
 <header id="topbar" class="topbar" aria-label="Cabeçalho do portal">
   <button id="go-start" class="brand-button" title="Início" aria-label="Voltar ao início"><img src="assets/astrion-logo-oficial.png" alt="Astrion Assessoria" class="header-logo-astrion"/></button>
@@ -2647,7 +2652,7 @@ function render(s){let html='';let theme;
  case 'quadrants':html=title(s,'small')+`<div class="quadrants">${s.items.map(x=>`<div class="quad"><div><span class="quad-tag">${esc(x[0])}</span><div class="quad-rank"><strong>${esc(x[1])}</strong><small>${esc(x[2])}</small></div></div><span style="font-size:11px;color:#85a4bd">NO GRUPO</span></div>`).join('')}</div>`;break;
  case 'comparisonExplorer':html=comparisonExplorer(s);break;
  case 'diversity':html=diversity(s);break;
- case 'fullBleed':html=`<div class="eyebrow reveal">O DIFERENCIAL ESTRATÉGICO</div>${title(s,'small')}<div class="quote-large reveal" style="margin-top:55px">${esc(s.quote)}</div>`;break;
+ case 'fullBleed':html=`<div class="eyebrow reveal">O DIFERENCIAL ESTRATÉGICO</div>${title(s,'small')}<div class="quote-large reveal quote-two-lines" style="margin-top:55px"><span>Pensamos com quem vende.</span><span>Entendemos quem administra.</span></div>`;break;
  case 'timeline':html=title(s,'small')+steps(s.items,'timeline');break;
  case 'commissionTable':html=commissionTable(s);break;
  case 'commissionBenchmark':html=commissionBenchmark(s);break;
