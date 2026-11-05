@@ -6,15 +6,15 @@ from PIL import Image, ImageOps
 import re,time
 
 PHOTOS = [
- 'photo-1521737711867-e3b97375f902',
- 'photo-1600596542815-ffad4c1539a9',
- 'photo-1460925895917-afdab827c52f',
- 'photo-1497366216548-37526070297c',
- 'photo-1554224155-6726b3ff858f',
- 'photo-1556761175-b413da4baf72',
- 'photo-1554224154-26032ffc0d07',
- 'photo-1522071820081-009f0129c71c',
- 'photo-1521791136064-7986c2920216'
+ 'photo-1552664730-d307ca884978',
+ 'photo-1560518883-ce09059eeffa',
+ 'photo-1551288049-bebda4e38f71',
+ 'photo-1486406146926-c627a92ad1ab',
+ 'photo-1454165804606-c3d57bc86b40',
+ 'photo-1517245386807-bb43f82c33c4',
+ 'photo-1579621970563-ebec7560ff3e',
+ 'photo-1522202176988-66273c2fd55f',
+ 'photo-1556761175-5973dc0f32e7'
 ]
 STYLE="""<style id="astrion-official-brand-v1">
 .brand-button{background:linear-gradient(135deg,#fff,#edf2f6)!important;border:1px solid #c6d6e1!important;border-radius:12px!important;padding:4px 11px!important;min-height:64px!important;box-shadow:0 7px 20px rgba(0,5,16,.16)!important}
@@ -67,6 +67,23 @@ def update_html(path):
     if 'astrion-official-brand-v1' not in src:
         assert src.count('</head>')==1
         src=src.replace('</head>',STYLE+'</head>',1)
+
+    # Declaracoes em duas linhas completas, sem palavra isolada no fim da linha.
+    old_quote = '<div class="quote-large reveal" style="margin-top:55px">${esc(s.quote)}</div>'
+    new_quote = '<div class="quote-large reveal quote-two-lines" style="margin-top:55px"><span>Pensamos com quem vende.</span><span>Entendemos quem administra.</span></div>'
+    if old_quote in src:
+        src=src.replace(old_quote,new_quote,1)
+    else:
+        assert new_quote in src, f'{path}: presentation quote template not found'
+    styling = """<style id="astrion-typography-refinement-v2">
+    .quote-two-lines{font-size:clamp(15px,3.05vw,46px)!important;line-height:1.22!important;letter-spacing:-.045em!important;max-width:100%!important}
+    .quote-two-lines span{display:block;white-space:nowrap}
+    .quote-two-lines span+span{margin-top:.25em}
+    @media(max-width:640px){.quote-two-lines{font-size:clamp(14px,3.7vw,23px)!important;letter-spacing:-.04em!important}}
+    </style>"""
+    if 'astrion-typography-refinement-v2' not in src:
+        src=src.replace('</head>',styling+'</head>',1)
+
     assert src[:500]==original_start
     assert src.count('astrion-official-brand-v1')==1
     assert src.count('chapter-visual" src=')==1
