@@ -614,6 +614,9 @@ html,body{width:100%;height:100%;overscroll-behavior:none}button,a,input,select{
 @media(max-width:360px){.header-logo-astrion{width:92px}.ancora-logo-wrap{width:82px}.header-logo-ancora{width:82px}.brand-divider{margin-inline:4px}.brand-by{margin-right:1px}.mobile-open{margin-left:5px}.header-partner{min-width:33px;width:33px}.landing-copy{padding-inline:22px}.slide-top .eyebrow{font-size:8px}.slide-top .slide-number{font-size:10px}.quad-rank strong{font-size:45px}}
 @media(prefers-reduced-motion:reduce){html,.stage{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important}}
 @media print{html,body{overflow:visible;height:auto;background:white}.topbar,.site-sidebar,.bottom-controls,.overlay-panel,.sidebar-scrim,.overlay-shade{display:none!important}.stage.mode-deck,.stage.mode-explore{position:static;height:auto;overflow:visible}.stage.mode-deck .slide,.stage.mode-explore .slide{display:flex!important;position:relative;opacity:1;pointer-events:auto;min-height:0;height:auto;overflow:visible;padding:70px 30px 35px;break-after:page;print-color-adjust:exact;-webkit-print-color-adjust:exact}.slide-inner{margin:0;max-width:100%}.slide.landing-slide{display:block!important}.landing-shell{height:auto}.slide-top{left:30px;right:30px}.slide-title,.slide-title.small{font-size:32px}}
+/* Correções observadas na revisão de todos os slides. */
+.topbar.on-light{background:linear-gradient(110deg,#06162a,#15365b)!important;border-bottom-color:#31516e!important;color:#f3f9ff!important}.topbar.on-light .brand-by,.topbar.on-light .header-presentation{color:#e8f4ff!important}.topbar.on-light .header-partner{color:#f3f9ff!important}.mode-deck .slide.is-active,.slide .reveal{animation:none!important;filter:none!important;transform:none!important}.flow-steps>*{min-width:0}.stage.mode-deck .slide{scroll-behavior:auto}
+@media(min-width:971px) and (max-width:1200px){.flow-steps,.timeline{grid-template-columns:repeat(3,minmax(0,1fr))}}
 </style></head><body>
 <a class="skip-link" href="#stage">Ir para o conteúdo</a>
 <header id="topbar" class="topbar" aria-label="Cabeçalho do portal">
@@ -2634,7 +2637,7 @@ function build(){
  syncStage(false); bind();
  // A mesma navegação de apresentação é mantida em todos os tamanhos.
 }
-function menuItems(term){let out='',last='';for(const s of S){if(term&&!(s.title+' '+s.lead+' '+CH[s.chapter].name).toLowerCase().includes(term.toLowerCase()))continue;
+function menuItems(term){let out='',last='';for(const s of S){if(term&&!(s.title+' '+s.lead+' '+CH[s.chapter].name).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(term.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase()))continue;
  if(last!==s.chapter){last=s.chapter;out+=`<div class="menu-group-title">${esc(CH[s.chapter].number)} &nbsp; ${esc(CH[s.chapter].name)}</div>`}
  out+=`<button class="menu-link ${s.number-1===state.index?'is-active':''}" data-jump="${s.number-1}"><span>${String(s.number).padStart(2,'0')}</span><strong>${esc(s.title)}</strong></button>`;
  }return out||'<div style="padding:25px;color:#7b8c9d">Nenhuma tela encontrada.</div>'}
@@ -2767,6 +2770,7 @@ if(!window.ASTRION_NOBOOT)build();
 })();
 </script><script>
 (()=>{
+const drawer=document.getElementById('site-sidebar');function syncDrawer(){drawer.inert=matchMedia('(max-width:970px)').matches&&!document.body.classList.contains('nav-open');}new MutationObserver(syncDrawer).observe(document.body,{attributes:true,attributeFilter:['class']});window.addEventListener('resize',syncDrawer);syncDrawer();
 let returnFocus=null;
 document.querySelectorAll('#menu-trigger,#notes-trigger').forEach(b=>b.addEventListener('click',()=>{returnFocus=b;const panel=document.querySelector('.overlay-panel:not([hidden])');if(panel)panel.querySelector('input,button')?.focus();}));
 document.querySelectorAll('[data-close],#overlay-shade').forEach(b=>b.addEventListener('click',()=>returnFocus?.focus()));
