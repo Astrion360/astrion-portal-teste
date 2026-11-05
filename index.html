@@ -661,6 +661,13 @@ html,body{width:100%;height:100%;overscroll-behavior:none}button,a,input,select{
     .quote-two-lines span{display:block;white-space:nowrap}
     .quote-two-lines span+span{margin-top:.25em}
     @media(max-width:640px){.quote-two-lines{font-size:clamp(14px,3.7vw,23px)!important;letter-spacing:-.04em!important}}
+    </style><style id="astrion-topic-visuals-v1">
+    .slide.chapter .chapter-art.chapter-photo{background:none!important;overflow:hidden!important}
+    .slide.chapter .chapter-art.chapter-photo .chapter-visual{
+      position:absolute!important;inset:0!important;display:block!important;
+      width:100%!important;height:100%!important;object-fit:cover!important;
+      max-width:none!important;z-index:1!important}
+    .slide.chapter .chapter-art.chapter-photo .chapter-marker{display:none!important}
     </style></head><body>
 <a class="skip-link" href="#stage">Ir para o conteúdo</a>
 <header id="topbar" class="topbar" aria-label="Cabeçalho do portal">
@@ -2618,7 +2625,7 @@ function render(s){let html='';let theme;
  case 'manifesto': html=`<div class="manifesto-panel">${title(s)}<div class="manifesto-words">${s.emphasis.map(x=>`<span>${esc(x)}</span>`).join('')}</div></div>`;break;
  case 'stats': html=cardStats(s);break;
  case 'chapters': html=title(s,'small')+chapterTiles();break;
- case 'chapter': html=`<div class="chapter-art chapter-photo chapter-photo-${esc(s.chapterNumber)}" aria-hidden="true"><img class="chapter-visual" src="assets/chapter-${esc(s.chapterNumber)}.webp" alt="" loading="eager" decoding="async"></div><div class="eyebrow reveal">CAPÍTULO ${esc(s.chapterNumber)}</div>${title(s)}<div class="chapter-subtitle reveal">ASTRION / CONHECIMENTO QUE CONECTA</div>`;break;
+ case 'chapter': html=`<div class="chapter-art chapter-photo chapter-photo-${esc(s.chapterNumber)}" aria-hidden="true"><img class="chapter-visual" src="assets/section-editorial-${esc(s.chapterNumber)}.svg" alt="" loading="eager" decoding="async"></div><div class="eyebrow reveal">CAPÍTULO ${esc(s.chapterNumber)}</div>${title(s)}<div class="chapter-subtitle reveal">ASTRION / CONHECIMENTO QUE CONECTA</div>`;break;
  case 'editorial': html=title(s,'small')+`<div class="quote-large">${esc(s.quote)}</div>`;break;
  case 'pillars':html=title(s,'small')+pillsGrid(s.items,s.items.length);break;
  case 'chain': html=title(s,'small')+chain();break;
