@@ -1,0 +1,30 @@
+name: Aplicar politica de imagens
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/fix_image_policy.py'
+      - '.github/workflows/image-policy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  corrigir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Aplicar correcoes sem alterar a abertura
+        run: python3 scripts/fix_image_policy.py
+      - name: Publicar somente os dois HTMLs revisados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html revisao/index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Corrige repeticao automatica de imagens sem alterar a capa"
+            git push
+          fi
