@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 740" role="img" aria-labelledby="t d">
+<title id="t">Estrutura visual editorial Astrion</title>
+<desc id="d">Composição abstrata de blocos e linhas que representam estruturação, distribuição e acompanhamento.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2c4b65"/><stop offset="1" stop-color="#071a2d"/></linearGradient><linearGradient id="h" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#D8B479" stop-opacity=".75"/><stop offset="1" stop-color="#C69E61" stop-opacity=".09"/></linearGradient></defs>
+<rect width="950" height="740" fill="url(#g)"/>
+<g stroke="#597388" stroke-opacity=".38" fill="none">
+<path d="M90 80H860M90 190H860M90 300H860M90 410H860M90 520H860M90 630H860"/>
+<path d="M155 64V676M265 64V676M375 64V676M485 64V676M595 64V676M705 64V676M815 64V676"/>
+</g>
+<rect x="166" y="395" width="190" height="190" fill="#4e6b82" opacity=".52"/>
+<rect x="367" y="294" width="180" height="291" fill="#6b8292" opacity=".56"/>
+<rect x="558" y="187" width="190" height="398" fill="url(#h)" stroke="#cba96c" stroke-width="1.3"/>
+<path d="M165 395 365 293 557 187" stroke="#e1bc7c" stroke-width="5" fill="none" stroke-linecap="square"/>
+<circle cx="165" cy="395" r="9" fill="#efd29b"/><circle cx="365" cy="293" r="9" fill="#efd29b"/><circle cx="557" cy="187" r="9" fill="#efd29b"/>
+<path d="M120 605H830" stroke="#C69E61" stroke-width="2" opacity=".8"/><path d="M830 605V188" stroke="#C69E61" opacity=".5"/>
+</svg>

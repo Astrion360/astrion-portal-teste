@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d"><title id="t">Jornada sequencial de uma cota: adesão, contribuições e assembleias, contemplação por sorteio ou lance em momento não garantido, utilização do crédito mediante requisitos e liquidação das obrigações</title><desc id="d">Jornada sequencial de uma cota: adesão, contribuições e assembleias, contemplação por sorteio ou lance em momento não garantido, utilização do crédito mediante requisitos e liquidação das obrigações.</desc><style><![CDATA[.bg{fill:#f7f9fc}.card{fill:#ffffff;stroke:#d7e2ee;stroke-width:2}.title{font:700 47px Arial,sans-serif;fill:#132c47}.subtitle{font:400 24px Arial,sans-serif;fill:#51677d}.heading{font:700 27px Arial,sans-serif;fill:#1d3d60}.body{font:400 22px Arial,sans-serif;fill:#51677d}.num{font:700 35px Arial,sans-serif;fill:#122e48}.label{font:600 20px Arial,sans-serif;fill:#395774}.note{font:400 20px Arial,sans-serif;fill:#52667c}.blue{fill:#1e527d}.pale{fill:#edf4fa}.line{fill:none;stroke:#7c98b0;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.arrow{fill:#7c98b0}.pill{fill:#eaf2fa}]]></style><rect width="1600" height="900" class="bg"/>
+<text x="90" y="99" class="title">Jornada de uma cota de consórcio</text>
+<text x="90" y="142" class="subtitle">Etapas do processo, não uma previsão do mês de contemplação.</text>
+<path d="M160 410 L1440 410" class="line"/>
+<g>
+<circle cx="170" cy="410" r="31" fill="#1e527d"/><circle cx="470" cy="410" r="31" fill="#1e527d"/><circle cx="770" cy="410" r="31" fill="#1e527d"/><circle cx="1070" cy="410" r="31" fill="#1e527d"/><circle cx="1420" cy="410" r="31" fill="#1e527d"/>
+<text x="170" y="419" text-anchor="middle" style="font:700 22px Arial;fill:white">1</text><text x="470" y="419" text-anchor="middle" style="font:700 22px Arial;fill:white">2</text><text x="770" y="419" text-anchor="middle" style="font:700 22px Arial;fill:white">3</text><text x="1070" y="419" text-anchor="middle" style="font:700 22px Arial;fill:white">4</text><text x="1420" y="419" text-anchor="middle" style="font:700 22px Arial;fill:white">5</text>
+</g>
+<text x="170" y="322" text-anchor="middle" class="heading">Adesão</text><text x="170" y="350" text-anchor="middle" class="body">Contrato e cota</text>
+<text x="470" y="501" text-anchor="middle" class="heading">Contribuições</text><text x="470" y="537" text-anchor="middle" class="body">E assembleias</text>
+<text x="770" y="320" text-anchor="middle" class="heading">Contemplação</text><text x="770" y="351" text-anchor="middle" class="body">Sorteio ou lance</text>
+<text x="1070" y="501" text-anchor="middle" class="heading">Utilização</text><text x="1070" y="537" text-anchor="middle" class="body">Após requisitos</text>
+<text x="1420" y="320" text-anchor="middle" class="heading">Liquidação</text><text x="1420" y="351" text-anchor="middle" class="body">Obrigações pagas</text>
+<rect x="90" y="630" width="1415" height="145" rx="24" class="pill"/>
+<text x="800" y="682" text-anchor="middle" class="heading">A contemplação não acontece em data garantida.</text>
+<text x="800" y="727" text-anchor="middle" class="body">Mesmo após adquirir o bem, o consorciado continua pagando o que ainda for devido.</text>
+</svg>

@@ -1,0 +1,11 @@
+:root {
+  /* Proposta de direção visual 08; validar com manuais das marcas antes da publicação. */
+  --navy: #0B223A; --navy-deep: #071A2D; --navy-light: #163A55;
+  --gold: #C69E61; --gold-hover: #DDB980; --ink: #152A3D;
+  --muted: #617185; --line: #DBE3E9; --paper: #FFF;
+  --canvas: #F4F7F9; --canvas-warm: #F7F5F0;
+  --container: 1240px; --gutter: 40px; --radius: 6px;
+  --font-ui: 'Segoe UI', Arial, system-ui, sans-serif;
+  --font-display: Georgia, 'Times New Roman', serif;
+}
+@media(max-width:599px) { :root { --gutter:20px; } }

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d"><title id="t">Prestação mensal ilustrativa de R$ 1</title><desc id="d">Prestação mensal ilustrativa de R$ 1.200 composta por R$ 1.000 de fundo comum, R$ 180 de taxa de administração e R$ 20 de reserva, em hipótese uniforme sem correção.</desc><style><![CDATA[.bg{fill:#f7f9fc}.card{fill:#ffffff;stroke:#d7e2ee;stroke-width:2}.title{font:700 47px Arial,sans-serif;fill:#132c47}.subtitle{font:400 24px Arial,sans-serif;fill:#51677d}.heading{font:700 27px Arial,sans-serif;fill:#1d3d60}.body{font:400 22px Arial,sans-serif;fill:#51677d}.num{font:700 35px Arial,sans-serif;fill:#122e48}.label{font:600 20px Arial,sans-serif;fill:#395774}.note{font:400 20px Arial,sans-serif;fill:#52667c}.blue{fill:#1e527d}.pale{fill:#edf4fa}.line{fill:none;stroke:#7c98b0;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.arrow{fill:#7c98b0}.pill{fill:#eaf2fa}]]></style><rect width="1600" height="900" class="bg"/>
+<text x="90" y="101" class="title">De onde vem o valor da prestação?</text>
+<text x="90" y="145" class="subtitle">Exemplo didático: R$ 100.000 | 100 meses | TA total 18% | FR total 2%</text>
+<rect x="90" y="220" width="1415" height="492" rx="30" class="card"/>
+<text x="142" y="301" class="label">PRESTAÇÃO MENSAL ILUSTRATIVA</text>
+<text x="142" y="377" class="title">R$ 1.200,00</text>
+<rect x="142" y="439" width="1198" height="93" rx="18" fill="#e5eef7"/>
+<path d="M142 457 Q142 439 160 439 H1140 V532 H160 Q142 532 142 514 Z" fill="#1e527d"/>
+<rect x="1140" y="439" width="180" height="93" fill="#5a88b0"/>
+<path d="M1320 439 H1322 Q1340 439 1340 457 V514 Q1340 532 1322 532 H1320 Z" fill="#a4bfd3"/>
+<text x="142" y="608" class="heading">R$ 1.000</text><text x="142" y="644" class="body">Fundo comum</text>
+<text x="742" y="608" class="heading">R$ 180</text><text x="742" y="644" class="body">Administração</text>
+<text x="1138" y="608" class="heading">R$ 20</text><text x="1138" y="644" class="body">Reserva</text>
+<text x="100" y="782" class="note">Sem seguro, antecipações, outras cobranças ou atualizações; cobrança linear apenas para explicar o conceito.</text>
+<text x="100" y="820" class="note">A prestação efetiva de cada produto deve ser calculada conforme contrato e regulamento.</text>
+</svg>

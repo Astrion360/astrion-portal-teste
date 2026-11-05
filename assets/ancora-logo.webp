@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="516" height="151" viewBox="0 0 516 151" role="img" aria-label="Âncora Consórcios">
+<title>Âncora Consórcios</title>
+<g fill="#f6fcff" font-family="DejaVu Sans,Arial,sans-serif" font-weight="850" font-size="103" letter-spacing="-6">
+<text x="4" y="101">Â</text><text x="97" y="101">N</text><text x="346" y="101">R</text><text x="431" y="101">A</text></g>
+<path d="M 252 31 A 47 47 0 1 0 252 109" fill="none" stroke="#17baa9" stroke-width="16" stroke-linecap="butt"/>
+<path d="M 246 26 L 270 26 L 255 11 Z M 244 114 L 265 114 L 254 128 Z" fill="#17baa9"/>
+<path d="M 270 31 A 47 47 0 1 1 270 110" fill="none" stroke="#f6fcff" stroke-width="16"/>
+<path d="M 252 72 H 295" fill="none" stroke="#17baa9" stroke-width="12" stroke-linecap="round"/>
+<circle cx="305" cy="72" r="16" fill="#17baa9"/><circle cx="305" cy="72" r="5" fill="#f2fbff"/>
+<text x="26" y="146" fill="#f4f9ff" font-family="Arial,Helvetica,sans-serif" font-size="23" letter-spacing="17">consórcios</text>
+</svg>
